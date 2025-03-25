@@ -1,0 +1,20 @@
+.navbar i {
+    margin-right: 50px;
+    font-size: 50px;
+}
+#burgerIcon {
+    color: white;
+    font-size: 45px;
+    padding: 2.2rem;
+}
+
+.card-header {
+    background-color:rgb(1, 49, 49) ;
+    color:rgb(255, 255, 255) ;  
+}
+.navbar {
+    background-color: cadetblue;
+}
+.navbar-brand {
+    color: white;
+}

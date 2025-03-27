@@ -277,7 +277,7 @@
                         
                         <div class="col d-flex justify-content-between">
                             
-                            <button type="button" class="btn btn-warning" @click="etapa -= 1"> 
+                            <button type="button" class="btn btn-warning" @click="etapa == 1"> 
                                 Editar o Lanche
                             </button>
 
@@ -294,10 +294,47 @@
                 <!-- Repetir pedido -->
                 <div class="row mt-2">
 
-                    <div>
-                                                                                                                                                                                                                                                                                                                                                     
+                    <!-- Repetir pedido -->
+                 <!-- Etapa == 3 -->
+                <div class="col-md-6" v-if="etapa == 3">
+                    
+                    <!-- Pedido Confirmado -->
+                    <div class="row mt-2">
+                        <div class="col">
+
+                            <div class="card">
+
+                                <div class="card-header">
+                                    Pedido Confirmado
+                                </div>
+
+                                <div class="card-body">
+                                    <p>Agora é só aguardar.</p>
+                                    <p>Vamos levar o pedido até você.</p>
+                                </div>
+
+                            </div> <!-- fim Card -->
+
+                        </div>
+
+                    </div> <!-- Fim Pedido Confirmado -->
+                    <div class="row mt-2">
+                        <div class="col d-flex justify-content-between">
+
+                            <!-- Botao 1 Repetir o Pedido -->
+                            <button class="btn btn-primary" type="button" @click="etapa = 1">
+                                Repetir Pedido    
+                            </button>
+
+                            <!-- Botao 2 Novo Pedido -->
+                            <button class="btn btn-success" type="button" @click="novoPedido()">
+                                Novo Pedido
+                            </button>
+
+                        </div>
                     </div>
-               
+
+                </div> <!-- Fim etapa 3 -->
                 </div>
 
                       
